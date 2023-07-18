@@ -53,13 +53,14 @@ const MainLayout = (props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [drawerOpen]);
 
+  //TODO: use component={motion.div} prop and add motion effects to header and content
   return (
     <Box sx={{ display: "flex", width: "100%" }}>
       <Header open={open} handleDrawerToggle={handleDrawerToggle} />
       <MainDrawer open={open} handleDrawerToggle={handleDrawerToggle} />
       <Box
         component="main"
-        sx={{ width: "100%", flexGrow: 1, p: { xs: 2, sm: 3 } }}
+        sx={{ width: "100%", height: "100%", flexGrow: 1, p: { xs: 2, sm: 3 } }}
       >
         <Toolbar />
         <Breadcrumbs navigation={navigation} title />

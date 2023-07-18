@@ -3,6 +3,7 @@ import { lazy } from 'react';
 // project import
 //import Loadable from 'components/Loadable';
 import MainLayout from '../layout/MainLayout/MainLayout';
+import PortfolioLayout from '../layout/PortfolioLayout/PortfolioLayout';
 
 
 // ==============================|| Lazy Loading ||============================== //
@@ -27,7 +28,7 @@ const MainRoutes = {
   children: [
     {
       path: '/',
-      element: <div>Put Portfolio content here</div>
+      element: <PortfolioLayout/>
     }
   ]
 };
